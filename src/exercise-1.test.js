@@ -71,4 +71,9 @@ describe("divideNumbers", () => {
     const result = divideNumbers(13, 5);
     expect(result).toBe(2.6);
   });
+
+  it("Divides one number from another", () => {
+    const result = divideNumbers(100, 0);
+    expect(result).toBe("Can't divide by 0");
+  });
 });
